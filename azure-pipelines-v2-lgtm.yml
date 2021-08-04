@@ -68,16 +68,6 @@ steps:
     AllTools: true
     ToolLogsNotFoundAction: 'Standard'
 
-- task: TSAUpload@1
-  inputs:
-    tsaVersion: 'TsaV2'
-    tsaEnvironment: 'PROD'
-    codeBaseName: 'Docs_default_v2'
-    uploadCredScan: true
-    uploadBinSkim: true
-    uploadSemmle: true
-    uploadAsync: true
-
 - task: PostAnalysis@1
   displayName: Security - PostAnalysis
   inputs:
