@@ -229,6 +229,6 @@ gulp.task("dev:release", gulp.series("pack", "publish:azdevops-perf-login", "pub
 
 gulp.task("main:build", gulp.series("clean", "build:release", "e2eTest"));
 gulp.task("main:pack", gulp.series("pack"));
-gulp.task("main:release", gulp.series("packAssetZip", "publish:azdevops-prod-login", "publish:azdevops-prod", "publish:nuget", "publish:gh-asset", "publish:chocolatey"));
+gulp.task("main:release", gulp.series("packAssetZip", "publish:azdevops-prod-login", "publish:azdevops-prod", "publish:nuget", "publish:chocolatey"));
 
 gulp.task("default", gulp.series("dev"));
